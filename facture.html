@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Glam'Shop - Beauté & Accessoires</title>
+  <link rel="icon" type="image/png" href="files/glam.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+  <script src="facture.js" defer></script> <!-- Le script de la page facture -->
+  <script src="controle.js"></script>
+</head>
+<body>
+    <header class="header1">
+        <div class="top-bar">
+            <div class="container">
+                <i class="fa-regular fa-envelope-open"><a href="mailto:needhelp.shop@gmail.com">      needhelp.shop@gmail.com </a></i>                
+            </div>
+        </div>
+        <div class="header-social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    <header>
+        <nav>
+            <a href="index.html"><img src="files/glam.png" id="logo" alt=""></a>
+            <ul>
+                <i class="fas fa-bars" id="menu-icon"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shopm.html">Makeup</a></li>
+                <li><a href="shopa.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <form id="formulaire-commande" onsubmit="return veriffacture()">
+            <fieldset>
+                <legend>Confirmation de commande</legend>
+            <label class="largeur" for="nom">Nom :</label>
+            <input class="largeur"  type="text" id="nom" ><br>
+
+            <label class="largeur"  for="prenom">Prénom :</label>
+            <input class="largeur"  type="text" id="prenom" ><br>
+
+            <label class="largeur"  for="email">Email :</label>
+            <input class="largeur"  type="email" id="email" ><br>
+
+            <label class="largeur"  for="telephone">Numéro de téléphone :</label>
+            <input class="largeur"  type="text" id="telephone" ><br>
+
+            <label class="largeur"  for="adresse">Adresse :</label>
+            <input class="largeur"  type="text" id="adresse" ><br>
+
+            <label class="largeur"  for="ville">Ville :</label>
+            <input class="largeur"  type="text" id="ville" ><br>
+
+            <button type="button" id="annuler">Annuler</button>
+            <button type="submit" id="envoyer">Envoyer</button>
+            </fieldset>
+        </form>
+
+        <div id="facture" style="display: none;">
+            <strong><h3 style="font-size: 20px;margin-left:10px;">Facture: </h3></strong><br>
+            <p id="infos-facture"></p>
+            <p id="total-facture"></p>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Glam'Shop - Tous droits réservés</p>
+        <p>Tél: +216 58 458 987</p>
+    </footer>
+</body>
+</html>
+
+

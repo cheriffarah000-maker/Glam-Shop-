@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Glam'Shop - Beauté & Accessoires</title>
+  <link rel="icon" type="image/png" href="files/glam.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header1">
+    <div class="top-bar">
+      <div class="container">
+        <i class="fa-regular fa-envelope-open"><a href="mailto:needhelp.shop@gmail.com"> needhelp.shop@gmail.com </a></i>                
+      </div>
+    </div>
+    <div class="header-social">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+
+  <header>
+    <nav>
+      <a href="index.html"><img src="files/glam.png" id="logo" alt=""></a>
+      <ul>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shopm.html">Makeup</a></li>
+        <li><a href="shopa.html">Accessories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside>
+    <form action="" onsubmit="return facture()">
+    <table>
+      <tr>
+        <td>
+          <figure  class="produit">
+            <img src="files/lev.jpg" alt="">
+            <figcaption>Tint</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 29.90DT</h3>
+              <p>REVOLUTION Encre à Lèvres "Pout Tint"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Tint" data-prix="29.900" id="boutonPanier" class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+        <td>
+          <figure class="produit">
+            <img src="files/lip.jpg" alt="">
+            <figcaption>Lipstick</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 14.90DT</h3>
+              <p>ESSENCE Meta Glow "Color Changing Lip"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Lipstick" data-prix="14.900"  class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <figure class="produit">
+            <img src="files/pal.jpg" alt="">
+            <figcaption>Palette</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 44.90DT</h3>
+              <p>ARTDECO Palette "Illusion Cheeks & Eyes N°4"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Palette1" data-prix="44.900"   class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+        <td>
+          <figure class="produit">
+            <img src="files/pal2.jpg" alt="">
+            <figcaption>Palette</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 52.90DT</h3>
+              <p>REVOLUTION Palette "Forever Flawless Cherry Rebel"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Palette2" data-prix="52.900"  class="ajouter-panier" >Ajouter au panier</button>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <figure class="produit">
+            <img src="files/mas.jpg" alt="">
+            <figcaption>Mascara</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 14.90DT</h3>
+              <p>ESSENCE Mascara "Lash Princess False Lash Effect"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Mascara1" data-prix="14.900"  class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+        <td>
+          <figure class="produit">
+            <img src="files/mas2.jpg" alt="">
+            <figcaption>Mascara</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 36.90DT</h3>
+              <p>ARTDECO Mascara "Volume Twist"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Mascara2" data-prix="36.900" class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <figure class="produit">
+            <img src="files/eye.jpg" alt="">
+            <figcaption>Eyeliner</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 13.90DT</h3>
+              <p>ESSENCE Eyeliner Pen "Extra Longlasting 24h"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Eyeliner" data-prix="13.900" class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+        <td>
+          <figure class="produit">
+            <img src="files/fon.jpg" alt="">
+            <figcaption>Fond de teint</figcaption>
+            <details>
+              <summary>Details</summary>
+              <h3>Prix: 54.90DT</h3>
+              <p>ARTDECO Fond de teint crème "Rich Treatment"</p>
+            </details>
+            <input class="quantite" type="text" placeholder="entrer quantité">
+            <button type="button" data-nom="Font de teint" data-prix="14.900" class="ajouter-panier">Ajouter au panier</button>
+          </figure>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <button id="btnPanier" onclick="window.location.href='panier.html'" style="position: fixed; top: 20px; right: 20px; z-index: 999;">🛒 Panier (0)</button>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Glam'Shop - Tous droits réservés</p>
+    <p>Tél: +216 58 458 987</p>
+  </footer>
+  <script defer src="produit.js"></script>
+
+</body>
+</html>
